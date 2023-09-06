@@ -10,7 +10,7 @@ import {
 } from "./components/pages/export";
 function App() {
   return (
-    <div className="h-screen">
+    <div className="h-screen body_color_primary">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/admin" element={<Admin />} />
