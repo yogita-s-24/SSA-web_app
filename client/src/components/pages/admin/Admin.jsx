@@ -1,8 +1,11 @@
 import React from 'react'
+import Nav from '../../nav/Nav'
 
 function admin() {
   return (
-    <div>admin</div>
+    <section>
+      <Nav/>
+      admin</section>
   )
 }
 

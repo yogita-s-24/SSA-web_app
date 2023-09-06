@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import Nav from "../../nav/Nav";
 
 function Test() {
   return (
-    <div>Test</div>
-  )
+    <section>
+      <Nav />
+      Test
+    </section>
+  );
 }
 
-export default Test
+export default Test;
