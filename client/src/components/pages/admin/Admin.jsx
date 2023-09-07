@@ -75,26 +75,24 @@ function admin() {
         <AdminNav />
       </aside>
       <main className="flex-[100%] md:h-full md:flex-[80%]">
-        <div className="justify-centre my-4 flex w-full flex-row flex-wrap justify-center items-center  gap-4 px-8 md:mx-auto md:my-16 md:w-[80%] md:justify-evenly md:p-0">
+        <div className="justify-centre my-4 flex w-full flex-row flex-wrap items-center justify-center  gap-4 px-8 md:mx-auto md:my-16 md:w-[80%] md:justify-evenly md:p-0">
           <ItemCard title="Test Attend" amount="20" icon="attend" />
           <ItemCard title="Test Pass" amount="20" icon="pass" />
           <ItemCard title="Test Fail" amount="20" icon="fail" />
         </div>
-        <div className="h-[80vh] md:h-[60vh] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 overflow-y-auto px-2 py-10">
+        <div className="grid h-[80vh] grid-cols-1 gap-3 overflow-y-auto px-2 py-10 sm:grid-cols-1 md:h-[60vh] md:grid-cols-2 lg:grid-cols-3">
           {userInfoDemo.map((user, i) => {
             return (
-              <>
-                <UserCard
-                  key={i}
-                  clas={user.class}
-                  email={user.email}
-                  name={user.name}
-                  number={user.number}
-                  testP={user.testPass}
-                  testA={user.testAttend}
-                  testF={user.testFail}
-                />
-              </>
+              <UserCard
+                key={i}
+                clas={user.class}
+                email={user.email}
+                name={user.name}
+                number={user.number}
+                testP={user.testPass}
+                testA={user.testAttend}
+                testF={user.testFail}
+              />
             );
           })}
         </div>
