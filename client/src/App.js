@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import {
+  AddTest,
   Admin,
   ErrorPage,
   Home,
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/admin" element={<Admin />} />
+        <Route path="/admin/add-test" element={<AddTest/>}/>
         <Route path="/test" element={<Test />} />
         <Route path="/log-in" element={<LogIn />} />
         <Route path="/reg" element={<Registration />} />

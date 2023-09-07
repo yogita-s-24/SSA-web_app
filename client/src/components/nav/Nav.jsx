@@ -25,17 +25,19 @@ function Nav() {
             {isClosed ? <RiAlignJustify /> : <RxCross1 />}
           </button>
           <Link to="/" className="ms-auto">
-          <img className="w-10 " src={Logo} alt="" />
-        </Link>
+            <img className="w-10 " src={Logo} alt="" />
+          </Link>
         </div>
         <div className={`relative top-0 -z-10 w-full bg-[#B9E9FC]  `}>
           <ul
             className={`${
               isClosed ? "-top-60" : "top-0"
             } absolute flex w-full flex-col bg-[#B9E9FC] px-8 text-sm transition-all duration-500 ease-linear md:static  md:top-0 md:flex-row md:justify-end md:gap-16 md:text-lg`}
-          >      <Link to="/" className="me-auto sm:hidden hidden">
-          <img className="w-10 " src={Logo} alt="" />
-        </Link>
+          >
+            {" "}
+            <Link to="/" className="me-auto hidden sm:hidden md:block">
+              <img className="w-10 " src={Logo} alt="" />
+            </Link>
             <li className="my-2 me-auto px-3 py-1  hover:bg-[#a7e6fe]  md:m-0 md:hover:bg-inherit">
               <Link
                 className=" text-stone-900 outline-none transition-all duration-100 ease-out hover:text-stone-600 focus:ring-2 active:ring-2"
