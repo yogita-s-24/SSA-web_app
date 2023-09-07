@@ -80,7 +80,7 @@ function admin() {
           <ItemCard title="Test Pass" amount="20" icon="pass" />
           <ItemCard title="Test Fail" amount="20" icon="fail" />
         </div>
-        <div className="flex h-[500px] md:h-[60vh] flex-wrap gap-2 overflow-y-auto px-2 py-10">
+        <div className="h-[80vh] md:h-[60vh] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 overflow-y-auto px-2 py-10">
           {userInfoDemo.map((user, i) => {
             return (
               <>

@@ -58,15 +58,9 @@ function AdminNav({ onClick }) {
             </Link>
           </li>
           <li className="my-2 me-auto px-3 py-1  hover:bg-[#a7e6fe]  md:m-0 md:hover:bg-inherit">
-            <Link
-              className=" text-stone-900 outline-none transition-all duration-100 ease-out hover:text-stone-600 focus:ring-2 active:ring-2"
-              to="/log-in"
-              onClick={() => {
-                setIsClosed(!isClosed);
-              }}
-            >
+            <button className=" text-stone-900 outline-none transition-all duration-100 ease-out hover:text-stone-600 focus:ring-2 active:ring-2">
               Log out
-            </Link>
+            </button>
           </li>
         </ul>
       </div>
