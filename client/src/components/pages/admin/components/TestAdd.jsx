@@ -1,6 +1,7 @@
 import React from "react";
 import { FcPlus, FcEditImage } from "react-icons/fc";
 import { AiTwotoneDelete } from "react-icons/ai";
+import NewTestForm from "./NewTestForm";
 
 function TestAdd() {
   let testDataPre = [
@@ -62,7 +63,7 @@ function TestAdd() {
   ];
   return (
     <section className="flex flex-col px-4 sm:px-3 md:px-8 ">
-        <h2 className="text-center text-3xl">Old Tests</h2>
+      <h2 className="text-center text-3xl">Old Tests</h2>
       <div className="my-[5vh] flex flex-col gap-4 ">
         {testDataPre.map((test, i) => {
           return (
@@ -98,102 +99,7 @@ function TestAdd() {
           </button>
         </div>
       </div>
-      <form
-        className="mx-auto flex  w-full flex-col bg-white px-2 py-3  sm:w-[95%] md:w-[90%] lg:w-[80%] border"
-        action=""
-      >
-        <h1 className="text-center text-3xl mb-5">New Test</h1>
-        <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-3 md:gap-4">
-          <div className="group flex flex-col px-2 py-2 md:flex-row">
-            <label htmlFor="title" className="text-lg">
-              Test Title :
-            </label>
-            <input
-              className="mx-3 mt-2 rounded border border-gray-300 bg-transparent outline-none transition-all duration-100 ease-in focus:bg-white/60  active:bg-slate-50 group-hover:border-gray-500 md:mt-0"
-              type="text"
-              name=""
-              id="title"
-            />
-          </div>
-          <div className="group flex flex-col px-2 py-2 md:flex-row">
-            <label htmlFor="title" className="text-lg">
-              Test Time :
-            </label>
-            <input
-              className="mx-3 mt-2 rounded border border-gray-300 bg-transparent outline-none transition-all duration-100 ease-in focus:bg-white/60  active:bg-slate-50 group-hover:border-gray-500 md:mt-0"
-              type="text"
-              name=""
-              id="title"
-            />
-          </div>
-          <div className="group flex flex-col px-2 py-2 md:flex-row">
-            <label htmlFor="title" className="text-lg">
-              Test Mark :
-            </label>
-            <input
-              className="mx-3 mt-2 rounded border border-gray-300 bg-transparent outline-none transition-all duration-100 ease-in focus:bg-white/60  active:bg-slate-50 group-hover:border-gray-500 md:mt-0"
-              type="text"
-              name=""
-              id="title"
-            />
-          </div>
-        </div>
-        <h5 className="my-4 text-center text-2xl">Add Questions </h5>
-        <div className="flex flex-col">
-          <div className="group col-span-4 flex flex-col px-2 py-2 ">
-            <label htmlFor="title" className="mb-4 text-lg">
-              1. Question :
-            </label>
-            <input
-              className="  rounded border border-gray-300 bg-transparent outline-none transition-all duration-100 ease-in focus:bg-white/60  active:bg-slate-50 group-hover:border-gray-500 md:mt-0"
-              type="text"
-              name=""
-              id="title"
-            />
-          </div>
-          <div className=" grid grid-cols-1 gap-4 p-2 sm:grid-cols-2">
-            <label htmlFor="title" className="text-lg sm:col-span-2 ">
-              Answer :
-            </label>
-            <input
-              className="  rounded border border-gray-300 bg-transparent outline-none transition-all duration-100 ease-in hover:border-gray-500  focus:bg-white/60 active:bg-slate-50 md:mt-0"
-              type="text"
-              name=""
-              id="title"
-              placeholder="Option 1"
-            />
-            <input
-              className="  rounded border border-gray-300 bg-transparent outline-none transition-all duration-100 ease-in hover:border-gray-500  focus:bg-white/60 active:bg-slate-50 md:mt-0"
-              type="text"
-              name=""
-              id="title"
-              placeholder="Option 2"
-            />
-            <input
-              className="  rounded border border-gray-300 bg-transparent outline-none transition-all duration-100 ease-in hover:border-gray-500  focus:bg-white/60 active:bg-slate-50 md:mt-0"
-              type="text"
-              name=""
-              id="title"
-              placeholder="Option 3"
-            />
-            <input
-              className="  rounded border border-gray-300 bg-transparent outline-none transition-all duration-100 ease-in hover:border-gray-500  focus:bg-white/60 active:bg-slate-50 md:mt-0"
-              type="text"
-              name=""
-              id="title"
-              placeholder="Option 4"
-            />
-          </div>
-        </div>
-        <div className="my-4 w-full flex justify-center gap-8">
-          <button className="mx-auto block  rounded bg-green-400 px-2 py-4">
-            Add Another Question
-          </button>
-          <button className="mx-auto block  rounded bg-red-400 px-2 py-4">
-            Submit Test
-          </button>
-        </div>
-      </form>
+    <NewTestForm/>
     </section>
   );
 }
