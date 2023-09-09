@@ -4,5 +4,6 @@ import Test from "./test/Test";
 import LogIn from "./auth/login/LogIn";
 import Registration from "./auth/reg/Registration";
 import ErrorPage from "./page-not-found/ErrorPage";
+import AddTest from "./admin/pages/AddTest";
 
-export { Home, Admin, Test , LogIn, Registration, ErrorPage };
+export { Home, Admin,AddTest, Test , LogIn, Registration, ErrorPage };
