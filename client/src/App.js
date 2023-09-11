@@ -15,6 +15,7 @@ function App() {
  function error() {
    setIsAdminLogIn()
  }
+  error()
   return (
     <div className="body_color_primary">
       <Routes>
