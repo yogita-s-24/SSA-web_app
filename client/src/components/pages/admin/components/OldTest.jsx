@@ -1,5 +1,5 @@
 import React from "react";
-import { FcPlus, FcEditImage } from "react-icons/fc";
+import { FcPlus,  } from "react-icons/fc";
 import UserCard from "./UserCard";
 import UserItem from "./UserItem";
 
