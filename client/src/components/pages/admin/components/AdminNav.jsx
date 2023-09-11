@@ -10,7 +10,7 @@ function AdminNav({ onClick }) {
   const [isClosed, setIsClosed] = useState(true);
   return (
     <nav
-      className={`sticky top-0 z-[9999] flex flex-col px-0 sm:flex-col md:flex-row md:bg-[#B9E9FC] md:px-4 md:py-3 `}
+      className={`sticky top-0 z-50 flex flex-col px-0 sm:flex-col md:flex-row md:bg-[#B9E9FC] md:px-4 md:py-3 `}
     >
       <div className="z-50  flex bg-[#B9E9FC] px-4 py-2 md:hidden">
         <button

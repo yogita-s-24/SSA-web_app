@@ -5,25 +5,29 @@ import { BiChevronDown, BiChevronUp } from "react-icons/bi";
 function Dropdown({ title, items }) {
   let [isActive, setIsActive] = useState(false);
   return (
-    <div className="relative bottom-0 bg-white">
+    <div className="relative bottom-0 -z-[999999] overflow-hidden">
       <button
         onClick={() => {
           const active = !isActive;
           setIsActive(active);
         }}
-        className="flex items-center justify-center text-blue-400"
+        className="z-10   flex items-center justify-center text-blue-400"
       >
         {title}
-        {isActive ? <BiChevronUp /> : <BiChevronDown />}
+        {isActive ? (
+          <BiChevronUp className="" />
+        ) : (
+          <BiChevronDown className="" />
+        )}
       </button>
       <div
         className={`${
           isActive
-            ? "absolute left-[0%] z-30 mx-auto flex h-auto max-h-[150px] w-auto translate-x-[-50%] transform flex-col justify-start truncate border bg-white"
+            ? "absolute left-[-60%]  flex h-auto max-h-[150px] w-auto translate-x-[-50%] transform flex-col justify-start truncate border bg-white"
             : "hidden"
-        } rounded-sm p-2 transition-all duration-200 ease-in`}
+        } z-[888] rounded-sm  p-2 transition-all duration-200 ease-in`}
       >
-        <div className="h-full w-full overflow-y-auto overflow-x-hidden">
+        <div className="h-full w-full z-[777]   overflow-y-auto overflow-x-hidden">
           {items?.map((item, i) => {
             return (
               <div

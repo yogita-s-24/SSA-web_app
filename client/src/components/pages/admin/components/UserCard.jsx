@@ -7,15 +7,13 @@ import Dropdown from "./Dropdown";
 // } from "react-icons/fc";
 function UserCard({ name, email, number, testP, testF, testA, clas }) {
   return (
-    <div className="mb-2 flex h-[50px] w-full items-center justify-center rounded-md border bg-white px-1 capitalize sm:h-[100px]">
+    <div className="mb-2 flex z-10 h-[50px] w-full items-center justify-center rounded-md border bg-white px-1 capitalize sm:h-[100px]">
       <div className="flex w-full items-center justify-center ">
-        <span className="flex h-[20px]  w-[20px] items-center justify-center truncate rounded-full shadow-sm shadow-blue-500 sm:h-[50px] sm:w-[50px]">
-          {name}
-        </span>
-        <div className="ms-4 flex h-full w-full items-center  justify-around sm:grid sm:grid-cols-3 sm:gap-x-2 sm:gap-y-3 md:ms-6">
+       
+        <div className="ms-4 flex h-full w-full items-center  justify-between sm:grid sm:grid-cols-3 sm:gap-x-2 sm:gap-y-3 md:ms-6">
           <div className="block truncate sm:flex ">Name: {name}</div>
           <div className="hidden truncate sm:flex  ">Class: {clas}</div>
-          <div className="flex sm:hidden md:hidden">
+          <div className="flex sm:hidden md:hidden z-[100]">
             <Dropdown
               title="More"
               items={[
