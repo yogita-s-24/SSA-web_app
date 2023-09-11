@@ -58,7 +58,9 @@ function AdminNav({ onClick }) {
             </Link>
           </li>
           <li className="my-2 me-auto px-3 py-1  hover:bg-[#a7e6fe]  md:m-0 md:hover:bg-inherit">
-            <button className=" text-stone-900 outline-none transition-all duration-100 ease-out hover:text-stone-600 focus:ring-2 active:ring-2">
+            <button className=" text-stone-900 outline-none transition-all duration-100 ease-out hover:text-stone-600 focus:ring-2 active:ring-2"
+            onClick={onClick}
+            >
               Log out
             </button>
           </li>
