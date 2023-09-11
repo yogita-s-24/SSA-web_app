@@ -14,7 +14,7 @@ function NewTestForm() {
               Test Title :
             </label>
             <input
-              className="mx-3 mt-2 rounded border border-gray-300 bg-transparent outline-none transition-all duration-100 ease-in focus:bg-white/60  active:bg-slate-50 group-hover:border-gray-500 md:mt-0"
+              className="px-1 mx-3 mt-2 rounded border border-gray-300 bg-transparent outline-none transition-all duration-100 ease-in focus:bg-white/60  active:bg-slate-50 group-hover:border-gray-500 md:mt-0"
               type="text"
               name=""
               id="title"
@@ -25,7 +25,7 @@ function NewTestForm() {
               Test Time :
             </label>
             <input
-              className="mx-3 mt-2 rounded border border-gray-300 bg-transparent outline-none transition-all duration-100 ease-in focus:bg-white/60  active:bg-slate-50 group-hover:border-gray-500 md:mt-0"
+              className="px-1 mx-3 mt-2 rounded border border-gray-300 bg-transparent outline-none transition-all duration-100 ease-in focus:bg-white/60  active:bg-slate-50 group-hover:border-gray-500 md:mt-0"
               type="text"
               name=""
               id="Time"
@@ -36,7 +36,7 @@ function NewTestForm() {
               Test Mark :
             </label>
             <input
-              className="mx-3 mt-2 rounded border border-gray-300 bg-transparent outline-none transition-all duration-100 ease-in focus:bg-white/60  active:bg-slate-50 group-hover:border-gray-500 md:mt-0"
+              className="px-1 mx-3 mt-2 rounded border border-gray-300 bg-transparent outline-none transition-all duration-100 ease-in focus:bg-white/60  active:bg-slate-50 group-hover:border-gray-500 md:mt-0"
               type="text"
               name=""
             />
@@ -50,7 +50,7 @@ function NewTestForm() {
                 1. Question :
               </label>
               <input
-                className=" mb-4 rounded border border-gray-300 bg-transparent outline-none transition-all duration-100 ease-in hover:border-gray-500  focus:bg-white/60 active:bg-slate-50 md:mt-0"
+                className="px-1  mb-4 rounded border border-gray-300 bg-transparent outline-none transition-all duration-100 ease-in hover:border-gray-500  focus:bg-white/60 active:bg-slate-50 md:mt-0"
                 type="text"
                 name=""
                 id="qus"
@@ -58,34 +58,45 @@ function NewTestForm() {
               />
             </div>
             <input
-              className="  rounded border border-gray-300 bg-transparent outline-none transition-all duration-100 ease-in focus:bg-white/60  active:bg-slate-50 group-hover:border-gray-500 md:mt-0"
+              className="px-1   rounded border border-gray-300 bg-transparent outline-none transition-all duration-100 ease-in focus:bg-white/60  active:bg-slate-50 group-hover:border-gray-500 md:mt-0"
               type="text"
               name=""
               id="mark"
             />
           </div>
           <div className=" grid grid-cols-1 gap-4 p-2 sm:grid-cols-2">
-            <label className="text-lg sm:col-span-2 ">Answer :</label>
+          <div className="flex items-center justify-between col-span-2">
+              <label htmlFor="ans" className=" text-lg">
+                Answer:
+              </label>
+              <input
+                className="px-1  rounded border border-gray-300 bg-transparent outline-none transition-all duration-100 ease-in hover:border-gray-500  focus:bg-white/60 active:bg-slate-50 md:mt-0"
+                type="text"
+                name=""
+                id="ans"
+                placeholder="Correct answer"
+              />
+            </div>
             <input
-              className="  rounded border border-gray-300 bg-transparent outline-none transition-all duration-100 ease-in hover:border-gray-500  focus:bg-white/60 active:bg-slate-50 md:mt-0"
+              className="px-1   rounded border border-gray-300 bg-transparent outline-none transition-all duration-100 ease-in hover:border-gray-500  focus:bg-white/60 active:bg-slate-50 md:mt-0"
               type="text"
               name=""
               placeholder="Option 1"
             />
             <input
-              className="  rounded border border-gray-300 bg-transparent outline-none transition-all duration-100 ease-in hover:border-gray-500  focus:bg-white/60 active:bg-slate-50 md:mt-0"
+              className="px-1   rounded border border-gray-300 bg-transparent outline-none transition-all duration-100 ease-in hover:border-gray-500  focus:bg-white/60 active:bg-slate-50 md:mt-0"
               type="text"
               name=""
               placeholder="Option 2"
             />
             <input
-              className="  rounded border border-gray-300 bg-transparent outline-none transition-all duration-100 ease-in hover:border-gray-500  focus:bg-white/60 active:bg-slate-50 md:mt-0"
+              className="px-1   rounded border border-gray-300 bg-transparent outline-none transition-all duration-100 ease-in hover:border-gray-500  focus:bg-white/60 active:bg-slate-50 md:mt-0"
               type="text"
               name=""
               placeholder="Option 3"
             />
             <input
-              className="  rounded border border-gray-300 bg-transparent outline-none transition-all duration-100 ease-in hover:border-gray-500  focus:bg-white/60 active:bg-slate-50 md:mt-0"
+              className="px-1   rounded border border-gray-300 bg-transparent outline-none transition-all duration-100 ease-in hover:border-gray-500  focus:bg-white/60 active:bg-slate-50 md:mt-0"
               type="text"
               name=""
               placeholder="Option 4"

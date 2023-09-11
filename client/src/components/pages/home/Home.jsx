@@ -2,10 +2,11 @@ import React from "react";
 import Nav from "../../nav/Nav";
 function Home() {
   return (
-    <div>
-      <Nav />
-    
-    </div>
+    <section>
+      <header className="sticky top-0">
+        <Nav />
+      </header>
+    </section>
   );
 }
 
