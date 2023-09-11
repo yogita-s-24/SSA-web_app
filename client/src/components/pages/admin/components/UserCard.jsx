@@ -1,50 +1,50 @@
 import React from "react";
-import {
-  FcAcceptDatabase,
-  FcDataProtection,
-  FcHighPriority,
-} from "react-icons/fc";
+import Dropdown from "./Dropdown";
+// import {
+//   FcAcceptDatabase,
+//   FcDataProtection,
+//   FcHighPriority,
+// } from "react-icons/fc";
 function UserCard({ name, email, number, testP, testF, testA, clas }) {
   return (
-    <>
-      <div className="grid grid-cols-2 gap-2 rounded border border-blue-300/50 bg-white p-3 sm:grid-cols-2 md:grid-cols-3">
-        <h4 className="text-lx p-3">Name: {name}</h4>
-        <span className="p-3">Class: {clas}</span>
-        <div className="gir col-span-3 grid grid-cols-2">
-          <span className="p-3">Gmail: {email}</span>
-          <span className="p-3">No. {number}</span>
-        </div>
-        <div className=" col-span-2 grid grid-cols-3 gap-2 md:col-span-4">
-          <div className=" flex flex-col items-center justify-center rounded border border-blue-500/10 p-2 shadow shadow-blue-300">
-            <div className="flex flex-row items-center gap-3 text-blue-500">
-              <FcDataProtection className="text-4xl " />
-              Attempted
-            </div>
-            <span className="mx-auto block text-center text-blue-500">
-              {testA}
-            </span>
+    <div className="mb-2 flex h-[50px] w-full items-center justify-center rounded-md border bg-white px-1 capitalize sm:h-[100px]">
+      <div className="flex w-full items-center justify-center ">
+        <span className="flex h-[20px]  w-[20px] items-center justify-center truncate rounded-full shadow-sm shadow-blue-500 sm:h-[50px] sm:w-[50px]">
+          {name}
+        </span>
+        <div className="ms-4 flex h-full w-full items-center  justify-around sm:grid sm:grid-cols-3 sm:gap-x-2 sm:gap-y-3 md:ms-6">
+          <div className="block truncate sm:flex ">Name: {name}</div>
+          <div className="hidden truncate sm:flex  ">Class: {clas}</div>
+          <div className="flex sm:hidden md:hidden">
+            <Dropdown
+              title="More"
+              items={[
+                `Class: ${clas}`,
+                `Roll No.${number}`,
+                `Gmail: ${email}`,
+                `Test Pass ${testP} `,
+                `Test Fail ${testF} `,
+                `Test Att.. ${testA} `,
+              ]}
+            />
           </div>
-          <div className=" flex flex-col items-center justify-center rounded border border-green-500/10 p-2 shadow shadow-green-300">
-            <div className="flex flex-row items-center gap-3 text-green-500">
-              <FcAcceptDatabase className="text-4xl " />
-              Passed
-            </div>
-            <span className="mx-auto block text-center text-green-500">
-              {testP}
+          <div className="hidden truncate sm:flex  ">Roll No.{number}</div>
+          <div className="sm: hidden truncate sm:flex ">Email: {email}</div>
+          <div className="hidden  truncate  sm:col-span-2 sm:flex sm:flex-row sm:items-center sm:justify-around">
+            <span className="sm:">Test: </span>
+            <span className="border-green-300 text-green-600 sm:border-b">
+              Pass: {testP}
             </span>
-          </div>
-          <div className=" flex flex-col items-center justify-center rounded border border-red-500/10 p-2 shadow shadow-red-300">
-            <div className="flex flex-row items-center gap-3 text-red-500">
-              <FcHighPriority className="text-4xl " />
-              Failed
-            </div>
-            <span className="mx-auto block text-center text-red-500">
-              {testF}
+            <span className="border-red-300 text-red-600 sm:border-b">
+              Fail: {testF}
+            </span>
+            <span className="border-blue-300 text-blue-600 sm:border-b">
+              Attempted: {testA}
             </span>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

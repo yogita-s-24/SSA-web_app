@@ -6,7 +6,7 @@ import UserCard from "./components/UserCard";
 function admin() {
   let userInfoDemo = [
     {
-      name: "John",
+      name: "a",
       email: "a@mail.com",
       testAttend: "4",
       testPass: "3",
@@ -15,7 +15,7 @@ function admin() {
       number: 123456789,
     },
     {
-      name: "John",
+      name: "b",
       email: "a@mail.com",
       testAttend: "4",
       testPass: "3",
@@ -24,7 +24,7 @@ function admin() {
       number: 123456789,
     },
     {
-      name: "John",
+      name: "c",
       email: "a@mail.com",
       testAttend: "4",
       testPass: "3",
@@ -33,7 +33,7 @@ function admin() {
       number: 123456789,
     },
     {
-      name: "John",
+      name: "d",
       email: "a@mail.com",
       testAttend: "4",
       testPass: "3",
@@ -42,7 +42,7 @@ function admin() {
       number: 123456789,
     },
     {
-      name: "John",
+      name: "e",
       email: "a@mail.com",
       testAttend: "4",
       testPass: "3",
@@ -51,7 +51,7 @@ function admin() {
       number: 123456789,
     },
     {
-      name: "John",
+      name: "f",
       email: "a@mail.com",
       testAttend: "4",
       testPass: "3",
@@ -60,7 +60,7 @@ function admin() {
       number: 123456789,
     },
     {
-      name: "John",
+      name: "g",
       email: "a@mail.com",
       testAttend: "4",
       testPass: "3",
@@ -80,7 +80,7 @@ function admin() {
           <ItemCard title="Test Pass" amount="20" icon="pass" />
           <ItemCard title="Test Fail" amount="20" icon="fail" />
         </div>
-        <div className="grid  grid-cols-1 gap-3  px-2 py-10 sm:grid-cols-1  md:grid-cols-2 lg:grid-cols-3">
+        <div className="h-full px-1  ">
           {userInfoDemo.map((user, i) => {
             return (
               <UserCard
