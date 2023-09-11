@@ -7,4 +7,4 @@ import ErrorPage from "./page-not-found/ErrorPage";
 import AdminLogin from "./admin/pages/AdminLogIn";
 import AddTest from "./admin/pages/AddTest";
 
-export { Home, Admin,AddTest, Test , LogIn, Registration, ErrorPage };
+export { Home, Admin,AddTest, Test , LogIn,AdminLogin ,Registration, ErrorPage };
