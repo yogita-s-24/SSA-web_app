@@ -5,7 +5,7 @@ import ItemCard from "./components/ItemCard";
 import UserCard from "./components/UserCard";
 import SearchCopm from "./components/SearchCopm";
 import dataA from "./dataA.js"; // Assuming you have your data in dataA.js
-import { RiH1 } from "react-icons/ri";
+
 
 function Admin({ onClick }) {
   const [searchResults, setSearchResults] = useState([]);
