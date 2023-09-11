@@ -12,6 +12,9 @@ import {
 import AdminLogIn from "./components/pages/admin/pages/AdminLogIn";
 function App() {
   const [isAdminLogIn, setIsAdminLogIn] = useState(true);
+ function error() {
+   setIsAdminLogIn()
+ }
   return (
     <div className="body_color_primary">
       <Routes>
