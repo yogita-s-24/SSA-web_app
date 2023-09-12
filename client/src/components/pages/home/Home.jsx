@@ -4,9 +4,12 @@ import Nav from "../../nav/Nav";
 
 export default function Home() {
   return (
-    <>
-      <Nav />
-     
+    <> 
+    <section>
+      <header className="sticky top-0">
+        <Nav />
+      </header>
+    </section>
     </>
   );
 }

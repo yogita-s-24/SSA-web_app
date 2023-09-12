@@ -10,7 +10,7 @@ function AdminNav({ onClick }) {
   const [isClosed, setIsClosed] = useState(true);
   return (
     <nav
-      className={`sticky top-0 z-[9999] flex flex-col px-0 sm:flex-col md:flex-row md:bg-[#B9E9FC] md:px-4 md:py-3 `}
+      className={`sticky top-0 z-50 flex flex-col px-0 sm:flex-col md:flex-row md:bg-[#B9E9FC] md:px-4 md:py-3 `}
     >
       <div className="z-50  flex bg-[#B9E9FC] px-4 py-2 md:hidden">
         <button
@@ -58,7 +58,9 @@ function AdminNav({ onClick }) {
             </Link>
           </li>
           <li className="my-2 me-auto px-3 py-1  hover:bg-[#a7e6fe]  md:m-0 md:hover:bg-inherit">
-            <button className=" text-stone-900 outline-none transition-all duration-100 ease-out hover:text-stone-600 focus:ring-2 active:ring-2">
+            <button className=" text-stone-900 outline-none transition-all duration-100 ease-out hover:text-stone-600 focus:ring-2 active:ring-2"
+            onClick={onClick}
+            >
               Log out
             </button>
           </li>
